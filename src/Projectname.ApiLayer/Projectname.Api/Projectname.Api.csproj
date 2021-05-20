@@ -12,10 +12,6 @@
       <ProjectReference Include="..\..\Projectname.CrossCuttingLayer\Projectname.CrossCuttingLayer.Dependencies\Projectname.CrossCuttingLayer.Dependencies.csproj" />
       <ProjectReference Include="..\..\Projectname.CrossCuttingLayer\Projectname.CrossCuttingLayer.Pipeline\Projectname.CrossCuttingLayer.Pipeline.csproj" />
       <ProjectReference Include="..\..\Projectname.InfrastructureLayer\Projectname.Infra\Projectname.Infra.csproj" />
-    </ItemGroup>    
-
-    <ItemGroup>
-      <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
     </ItemGroup>
 
 </Project>
