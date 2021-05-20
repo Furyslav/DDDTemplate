@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <LangVersion>9</LangVersion>
+        <TargetFrameworks>net5.0;net5.0-windows</TargetFrameworks>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Projectname.Domain.SeedWork\Projectname.Domain.SeedWork.csproj" />
+    </ItemGroup>
+
+</Project>

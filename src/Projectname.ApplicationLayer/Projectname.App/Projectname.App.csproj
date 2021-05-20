@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net5.0;net5.0-windows</TargetFrameworks>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0-preview.3.21201.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Projectname.CrossCuttingLayer\Projectname.CrossCuttingLayer.Pipeline\Projectname.CrossCuttingLayer.Pipeline.csproj" />
+      <ProjectReference Include="..\Projectname.App.Access\Projectname.App.Access.csproj" />
+      <ProjectReference Include="..\Projectname.App.Handlers\Projectname.App.Handlers.csproj" />
+      <ProjectReference Include="..\Projectname.App.Validation\Projectname.App.Validation.csproj" />
+    </ItemGroup>
+
+</Project>

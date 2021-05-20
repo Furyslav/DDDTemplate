@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net5.0;net5.0-windows</TargetFrameworks>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Projectname.CrossCuttingLayer.Dependencies\Projectname.CrossCuttingLayer.Dependencies.csproj" />
+      <ProjectReference Include="..\Projectname.CrossCuttingLayer.Wrappers\Projectname.CrossCuttingLayer.Wrappers.csproj" />
+    </ItemGroup>
+
+</Project>

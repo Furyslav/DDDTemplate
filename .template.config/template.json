@@ -1,0 +1,43 @@
+{
+  "author": "Furyslav",
+  "name": "Furyslav - DDD Architecture",
+  "description": "lol",
+  "identity": "Furyslav.DDD.Architecture",
+  "shortName": "Furyslav-DDD",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "classifications": [
+    "Web"
+  ],
+  "sourceName": "Projectname",
+  "symbols": {
+    "AggregateRootName": {
+      "type": "parameter",
+      "description": "The name of aggregate root.",
+      "datatype": "string",
+      "defaultValue": "Product",
+      "replaces": "_AggregateRoot_",
+      "fileRename": "_AggregateRoot_",
+      "isRequired": false
+    },
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "netcoreapp3.1"
+        }
+      ],
+      "defaultValue": "netcoreapp3.1"
+    }
+  },
+  "preferNameDirectory": true,
+  "primaryOutputs": [
+    {
+      "path": "DDDTemplate.sln"
+    }
+  ]
+}

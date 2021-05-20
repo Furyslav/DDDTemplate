@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net5.0;net5.0-windows</TargetFrameworks>
+        <AssemblyName>Projectname.Infra</AssemblyName>
+        <RootNamespace>Projectname.Infra</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Projectname.CrossCuttingLayer\Projectname.CrossCuttingLayer.Dependencies\Projectname.CrossCuttingLayer.Dependencies.csproj" />
+    </ItemGroup>
+
+</Project>
