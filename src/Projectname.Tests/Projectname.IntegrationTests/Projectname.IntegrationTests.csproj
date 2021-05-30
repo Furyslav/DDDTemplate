@@ -2,15 +2,22 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
+        <IsPackable>false</IsPackable>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="AutoFixture" Version="4.17.0" />
+      <Folder Include="Setup" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Pipeline" />
-      <Folder Include="Setup" />
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.10.0" />
+      <PackageReference Include="NUnit" Version="3.13.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\Projectname.ApplicationLayer\Projectname.App\Projectname.App.csproj" />
+      <ProjectReference Include="..\..\Projectname.CrossCuttingLayer\Projectname.CrossCuttingLayer.Dependencies\Projectname.CrossCuttingLayer.Dependencies.csproj" />
+      <ProjectReference Include="..\..\Projectname.InfrastructureLayer\Projectname.Infra\Projectname.Infra.csproj" />
     </ItemGroup>
 
 </Project>

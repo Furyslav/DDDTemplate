@@ -2,7 +2,6 @@
 using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
-using Projectname.CrossCuttingLayer.Wrappers.MediatR;
 
 namespace Projectname.CrossCuttingLayer.Pipeline.MediatR
 {
