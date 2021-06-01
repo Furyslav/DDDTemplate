@@ -7,7 +7,7 @@ namespace Projectname.CrossCuttingLayer.Pipeline.MediatR
 {
     public abstract class MediatrPipeline<TRequest, TResponse> : IPipelineBehavior<MediatrRequestWrapper<TRequest, TResponse>, TResponse>
     {
-        Task<TResponse> IPipelineBehavior<MediatrRequestWrapper<TRequest, TResponse>, TResponse>.Handle(
+        public Task<TResponse> Handle(
             MediatrRequestWrapper<TRequest, TResponse> requestWrapper,
             CancellationToken cancellationToken,
             RequestHandlerDelegate<TResponse> next)
@@ -16,4 +16,6 @@ namespace Projectname.CrossCuttingLayer.Pipeline.MediatR
         protected abstract Task<TResponse> Handle(TRequest request, Func<Task<TResponse>> next,
             CancellationToken cancellationToken);
     }
+    
+   
 }
